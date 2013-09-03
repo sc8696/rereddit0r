@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "re-reddit0r",
+  "description": "Auto refresh a reddit page if it's under heavy load.",
+  "version": "1.0",
+
+  "permissions": [],
+  "content_scripts": [
+      {
+          "matches": ["http://www.reddit.com/*", "https://*/*"],
+          "js": ["zepto.min.js", "reddit0r.js"]
+      }
+  ]
+}
